@@ -1,6 +1,8 @@
 <template>
   <div class="navigator">
-    <router-link class="navigator__logo" to="/">Logo</router-link>
+    <router-link class="navigator__logo" to="/">
+      <img src="@/assets/img/logo.png" alt />
+    </router-link>
     <div class="navigator__items">
       <router-link class="navigator__items--item" to="/">Inicio</router-link>
       <router-link class="navigator__items--item" to="/nosotros">Nosotros</router-link>
@@ -28,9 +30,11 @@ export default {};
   &__logo {
     width: 180px;
     height: auto;
-    padding: 25px 0;
-    background-color: #333;
     margin: 0 40px;
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
   &__items {
     &--item {
