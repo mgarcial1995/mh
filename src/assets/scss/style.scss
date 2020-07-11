@@ -19,6 +19,27 @@ body {
   background-color: #fff;
   font-family: "Roboto", sans-serif;
 }
+footer {
+  margin-top: 5px;
+  padding: 30px;
+  background-color: $blue-dark-background;
+  font-size: 20px;
+  color: $white-text;
+  font-weight: 400;
+  .footer__section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    &--info {
+      text-align: left;
+    }
+  }
+  .copyrigth {
+    padding-top: 20px;
+    text-align: center;
+  }
+}
 .container {
   width: 100%;
   height: auto;
@@ -135,16 +156,17 @@ body {
       }
       &--services {
         width: 100%;
-        max-height: auto;
+        height: auto;
+        max-height: 100vh;
         color: $white-text;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
         p {
           font-size: 60px;
           font-weight: 300;
-          margin: 40px 0;
+          margin: 20px 0;
           &:hover {
             font-weight: 700;
           }
@@ -200,6 +222,167 @@ body {
         font-weight: 300;
         margin: 40px 0;
         margin-bottom: 200px;
+      }
+    }
+  }
+}
+
+.about {
+  width: 100%;
+  height: auto;
+  &__header {
+    width: 100%;
+    height: 700px;
+    background-color: #333;
+    background-image: url("../img/nosotros.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__text {
+      max-width: 800px;
+      color: $white-text;
+      text-align: center;
+      &--title {
+        font-size: 30px;
+        font-weight: 800;
+        padding-bottom: 20px;
+      }
+      &--text {
+        font-size: 60px;
+        font-weight: 300;
+      }
+    }
+  }
+  &__history {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    padding: 100px 200px;
+    text-align: left;
+    &--subtitle {
+      font-size: 30px;
+      font-weight: 800;
+      padding-bottom: 20px;
+    }
+    &--text {
+      font-size: 55px;
+      font-weight: 300;
+      line-height: 65px;
+    }
+  }
+  &__history__about {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    &--text {
+      width: 50%;
+      background-color: $blue-background;
+      font-weight: 300;
+      font-size: 55px;
+      color: $white-text;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 100px;
+      line-height: 80px;
+    }
+    //laptop margin 0, tablet no image
+    &--image {
+      width: 50%;
+      height: auto;
+      max-height: 800px;
+      margin: -50px 0;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &__description {
+    width: 100%;
+    height: auto;
+    padding: 130px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    &--text {
+      padding: 20px 10px;
+      max-width: 1230px;
+      font-size: 55px;
+      font-weight: 300;
+      line-height: 65px;
+    }
+    &--banner {
+      max-width: 1230px;
+      width: 100%;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+.services {
+  width: 100%;
+  height: auto;
+  &__header {
+    width: 100%;
+    height: 700px;
+    background-color: #333;
+    background-image: url("../img/carrominero2.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__text {
+      max-width: 800px;
+      color: $white-text;
+      text-align: center;
+      &--title {
+        font-size: 30px;
+        font-weight: 800;
+        padding-bottom: 20px;
+      }
+      &--text {
+        font-size: 60px;
+        font-weight: 300;
+      }
+    }
+  }
+}
+.contact {
+  width: 100%;
+  height: auto;
+  &__header {
+    width: 100%;
+    height: 700px;
+    background-color: #333;
+    background-image: url("../img/equipo.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__text {
+      max-width: 800px;
+      color: $white-text;
+      text-align: center;
+      &--title {
+        font-size: 30px;
+        font-weight: 800;
+        padding-bottom: 20px;
+      }
+      &--text {
+        font-size: 60px;
+        font-weight: 300;
       }
     }
   }

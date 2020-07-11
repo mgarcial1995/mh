@@ -18,7 +18,9 @@ export default {};
 <style lang="scss" scoped>
 .navigator {
   width: 100%;
-  height: 100px;
+  height: auto;
+  min-height: 90px;
+  max-height: 100px;
   background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: space-between;
@@ -28,18 +30,27 @@ export default {};
   left: 0;
   z-index: 1;
   &__logo {
+    max-width: 300px;
     width: 180px;
     height: auto;
     margin: 0 40px;
     img {
       width: 100%;
+      min-width: 180px;
       height: auto;
+      min-height: 90px;
+      max-height: 100px;
     }
   }
   &__items {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
     &--item {
       padding: 0 30px;
-      margin: 0 20px;
       font-size: 20px;
       font-weight: 700;
       text-transform: uppercase;

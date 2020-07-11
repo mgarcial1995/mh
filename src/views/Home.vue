@@ -41,12 +41,16 @@
         <router-link to="/contacto" class="button--white">Contacto</router-link>
       </div>
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
+import Footer from "@/components/Footer";
 export default {
   name: "Home",
-  components: {}
+  components: {
+    Footer
+  }
 };
 </script>
