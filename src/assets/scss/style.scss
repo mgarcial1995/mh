@@ -2,7 +2,9 @@ $grey-background: #efefef;
 $blue-background: #162a58;
 $blue-dark-background: #05071e;
 
+$blue-inactive-text: #435b89;
 $grey-text: #4e4e4e;
+
 $blue-subtitle: #4e6c99;
 $white-text: #fff;
 $blue-button: #153878;
@@ -232,7 +234,8 @@ footer {
   height: auto;
   &__header {
     width: 100%;
-    height: 700px;
+    height: 600px;
+    max-height: 100vh;
     background-color: #333;
     background-image: url("../img/nosotros.jpg");
     background-size: 100% auto;
@@ -320,19 +323,30 @@ footer {
     &--banner {
       max-width: 1230px;
       width: 100%;
-      img{
+      img {
         width: 100%;
         height: auto;
       }
     }
   }
 }
+.colorWhite {
+  color: #fff;
+}
+.title {
+  color: $grey-text;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  padding: 40px 0;
+}
 .services {
   width: 100%;
   height: auto;
   &__header {
     width: 100%;
-    height: 700px;
+    height: 600px;
+    max-height: 100vh;
     background-color: #333;
     background-image: url("../img/carrominero2.jpg");
     background-size: 100% auto;
@@ -356,13 +370,68 @@ footer {
       }
     }
   }
+
+  .section__services {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    &__navServices {
+      width: 100%;
+      height: auto;
+      background-color: $blue-background;
+      color: $blue-inactive-text;
+      font-size: 40px;
+      font-weight: 700;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      p {
+        cursor: pointer;
+        padding: 30px 50px;
+        &:hover {
+          color: $white-text;
+        }
+      }
+    }
+    .box__service {
+      width: 400px;
+      height: 250px;
+      background-color: #333;
+      margin: 20px;
+    }
+    .comerce__service {
+      width: 100%;
+      height: auto;
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .fabrication__service {
+      width: 100%;
+      height: auto;
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .reparation__service {
+      width: 100%;
+      height: auto;
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  }
 }
 .contact {
   width: 100%;
   height: auto;
   &__header {
     width: 100%;
-    height: 700px;
+    height: 600px;
+    max-height: 100vh;
     background-color: #333;
     background-image: url("../img/equipo.jpg");
     background-size: 100% auto;
@@ -384,6 +453,29 @@ footer {
         font-size: 60px;
         font-weight: 300;
       }
+    }
+  }
+  .contact__container {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    &__image {
+      width: 40%;
+      height: auto;
+      background-color: rgb(204, 179, 179);
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    &__info {
+      width: 60%;
+      height: 700px;
+      background-color: $blue-background;
+      color: #FFF;
     }
   }
 }
