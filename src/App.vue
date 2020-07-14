@@ -3,6 +3,7 @@
     <div id="nav">
       <Navbar />
     </div>
+    <!-- editado -->
     <router-view />
   </div>
 </template>
