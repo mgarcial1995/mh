@@ -3,7 +3,7 @@
     <div class="about__header">
       <div class="about__header__text">
         <p class="about__header__text--title">Nosotros</p>
-        <p class="about__header__text--text">Nuestros años de experiencia nos respalda</p>
+        <p class="about__header__text--text">Nuestros años de experiencia nos respaldan</p>
       </div>
     </div>
     <div class="about__history">

@@ -1,9 +1,10 @@
 <template>
   <div class="box__service">
-    <div>image</div>
-    <!-- <img :src="image" :alt="name" /> -->
-    <div class="box__service__filter"></div>
-    <p class="box__service__title">{{ name }}</p>
+    <!-- <div>image</div> -->
+    <img :src="image" :alt="name" />
+    <div class="box__service__filter">
+      <p class="box__service__filter--title">  {{ name }}</p>
+    </div>
   </div>
 </template>
 

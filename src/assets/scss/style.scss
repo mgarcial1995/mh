@@ -16,10 +16,22 @@ $blue-button: #153878;
   padding: 0;
   box-sizing: border-box;
 }
+.homeSelect {
+  font-weight: 800;
+}
+.f__size__25 {
+  font-size: 25px;
+}
 html,
 body {
   background-color: #fff;
   font-family: "Roboto", sans-serif;
+}
+.mobile__menu {
+  display: none;
+}
+.navigator__mobile__items {
+  display: none;
 }
 footer {
   margin-top: 5px;
@@ -98,7 +110,10 @@ footer {
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background-color: rgb(124, 124, 124);
+    background-image: url("../img/portada.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
     p {
       font-weight: 900;
       color: #fff;
@@ -165,10 +180,11 @@ footer {
         flex-direction: column;
         justify-content: space-around;
         margin-bottom: 40px;
-        p {
+        &__text {
           font-size: 60px;
           font-weight: 300;
           margin: 20px 0;
+          cursor: pointer;
           &:hover {
             font-weight: 700;
           }
@@ -277,12 +293,13 @@ footer {
     }
   }
   &__history__about {
-    width: 100%;
+    width: 80%;
     height: auto;
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
     &--text {
-      width: 50%;
+      width: 55%;
       background-color: $blue-background;
       font-weight: 300;
       font-size: 55px;
@@ -295,7 +312,7 @@ footer {
     }
     //laptop margin 0, tablet no image
     &--image {
-      width: 50%;
+      width: 45%;
       height: auto;
       max-height: 800px;
       margin: -50px 0;
@@ -331,14 +348,14 @@ footer {
   }
 }
 .colorWhite {
-  color: #fff;
+  color: #fff !important;
 }
 .title {
   color: $grey-text;
   text-align: center;
   font-size: 30px;
   font-weight: 800;
-  padding: 40px 0;
+  padding: 100px 0px;
 }
 .services {
   width: 100%;
@@ -348,7 +365,7 @@ footer {
     height: 600px;
     max-height: 100vh;
     background-color: #333;
-    background-image: url("../img/carrominero2.jpg");
+    background-image: url("../img/servicios.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center 30%;
@@ -398,6 +415,38 @@ footer {
       height: 250px;
       background-color: #333;
       margin: 20px;
+      position: relative;
+      img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+      &__filter {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        &--title {
+          width: 300px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          color: $white-text;
+          font-size: 20px;
+          font-weight: 700;
+        }
+      }
     }
     .comerce__service {
       width: 100%;
@@ -433,7 +482,7 @@ footer {
     height: 600px;
     max-height: 100vh;
     background-color: #333;
-    background-image: url("../img/equipo.jpg");
+    background-image: url("../img/contacto.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center 30%;
@@ -462,10 +511,10 @@ footer {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+
     &__image {
       width: 40%;
       height: auto;
-      background-color: rgb(204, 179, 179);
       img {
         width: 100%;
         height: auto;
@@ -473,9 +522,54 @@ footer {
     }
     &__info {
       width: 60%;
-      height: 700px;
+      height: auto;
       background-color: $blue-background;
-      color: #FFF;
+      padding: 90px 100px;
+      color: #fff;
+      .info__ubications {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        margin-bottom: 20px;
+        &__text {
+          color: $blue-inactive-text;
+          font-weight: 800;
+          font-size: 40px;
+          margin-right: 80px;
+          cursor: pointer;
+          &:hover {
+            color: $white-text;
+          }
+        }
+      }
+      .info__details {
+        margin-top: 40px;
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 80px;
+      }
     }
   }
+  .contact__map {
+    margin-top: 50px;
+    width: 100%;
+    max-height: 50vh;
+  }
 }
+// @media only screen and (max-width: 768px) {
+//   .navigator__items {
+//     display: none !important;
+//   }
+//   .mobile__menu {
+//     display: block;
+//   }
+//   .navigator__mobile__items {
+//     display: flex;
+//     width: 100%;
+//     flex-direction: column;
+//     justify-content: space-around;
+//     &--item {
+//       margin: 10px 0;
+//     }
+//   }
+// }

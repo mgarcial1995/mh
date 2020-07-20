@@ -4,19 +4,19 @@
       <div class="footer__section--info">
         <p>
           Dirección:
-          <br />Av. Calle jiron - 1323 - Pataz - Perú
+          <br />Calle las esmeraldas 243 Urb. La Rinconada Trujillo - Trujillo
         </p>
       </div>
       <div class="footer__section--info">
         <p>
           Teléfonos:
-          <br />999 999 999 / 999 999 999
+          <br />+51 943 699 336 / ‎+51 44 639483
         </p>
       </div>
       <div class="footer__section--info">
         <p>
           Correo:
-          <br />correodeseado@gmail.com
+          <br />ventas@mhfabricaciones.com
         </p>
       </div>
     </div>
@@ -32,5 +32,8 @@ export default {};
 footer {
   width: 100%;
   height: auto;
+  p{
+    font-size: 16px;
+  }
 }
 </style>

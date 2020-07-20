@@ -53,16 +53,20 @@
         />
       </div>
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
+import Footer from "@/components/Footer";
+
 import Service from "@/components/Service";
 import { mapState } from "vuex";
 export default {
   name: "Services",
   components: {
-    Service
+    Service,
+    Footer
   },
   data() {
     return {

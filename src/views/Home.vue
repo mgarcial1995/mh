@@ -19,14 +19,28 @@
       <div class="services__listServices">
         <p class="services__listServices--subtitle">Nuestros servicios</p>
         <div class="services__listServices--services">
-          <p>Comercialización</p>
-          <p>Fabricación</p>
-          <p>Reparación</p>
+          <p
+            @click="comerce = true, fabrication = false, repare=false"
+            class="services__listServices--services__text"
+            :class="{homeSelect: comerce}"
+          >Comercialización</p>
+          <p
+            @click="comerce = false, fabrication = true, repare=false"
+            class="services__listServices--services__text"
+            :class="{homeSelect: fabrication}"
+          >Fabricación</p>
+          <p
+            @click="comerce = false, fabrication = false, repare=true"
+            class="services__listServices--services__text"
+            :class="{homeSelect: repare}"
+          >Reparación</p>
         </div>
         <router-link to="/servicios" class="button--white">Servicios</router-link>
       </div>
       <div class="services__images">
-        <img src="@/assets/img/reparacion.jpg" alt />
+        <img v-if="comerce" src="@/assets/img/comercializacion.png" alt />
+        <img v-if="fabrication" src="@/assets/img/fabricacion.png" alt />
+        <img v-if="repare" src="@/assets/img/reparacion.png" alt />
       </div>
     </div>
     <div class="contact">
@@ -49,6 +63,13 @@
 import Footer from "@/components/Footer";
 export default {
   name: "Home",
+  data() {
+    return {
+      comerce: true,
+      fabrication: false,
+      repare: false
+    };
+  },
   components: {
     Footer
   }
