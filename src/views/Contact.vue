@@ -22,13 +22,13 @@
             class="info__ubications__text"
             @click="showOffice = false, showFactory = true"
             :class="{colorWhite: showFactory}"
-          >Taller</p>
+          >Planta</p>
         </div>
 
         <hr style="font-weight: 800;" />
 
         <div v-if="showOffice" class="info__details">
-          Calle las esmeraldas 243 Urb. La Rinconada Trujillo - Trujillo
+          Calle Las Esmeraldas 243 - La Rinconada Trujillo - Trujillo
           <br />Telefonos:
           <br />+51 943 699 336 / ‎+51 44 639483
           <br />Correo:

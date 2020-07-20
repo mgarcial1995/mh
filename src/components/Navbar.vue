@@ -10,7 +10,7 @@
       <router-link class="navigator__items--item" to="/contacto">Contacto</router-link>
     </div>
 
-    <div v-if="showMobileNav" class="navigator__mobile__items">
+    <div id="menu" v-if="showMobileNav" class="navigator__mobile__items">
       <router-link class="navigator__mobile__items--item" to="/">
         <p @click="showMobileNav = false">Inicio</p>
       </router-link>
@@ -26,7 +26,7 @@
     </div>
 
     <div class="mobile__menu">
-      <i @click="showMobileNav = !showMobileNav" class="fas fa-bars"></i>
+      <i @click="showMobileNav = !showMobileNav, displayMenuMobile()" class="fas fa-bars"></i>
     </div>
   </div>
 </template>
@@ -37,6 +37,18 @@ export default {
     return {
       showMobileNav: false
     };
+  },
+  methods: {
+    displayMenuMobile() {
+      let menu = document.getElementById("menu");
+      menu.style.height = "100vh";
+    },
+    closeMenuMobile() {
+      let menu = document.getElementById("menu");
+      screen.width > 768
+        ? (menu.style.height = "100px")
+        : (menu.style.height = "80px");
+    }
   }
 };
 </script>
@@ -44,6 +56,7 @@ export default {
 <style lang="scss" scoped>
 .navigator {
   width: 100%;
+  transition: 1s;
   height: auto;
   min-height: 90px;
   max-height: 100px;
@@ -103,6 +116,7 @@ export default {
     position: fixed;
     top: 80px;
     left: 0;
+    transition: 1s;
     display: flex;
     background-color: #05071e;
     width: 100%;

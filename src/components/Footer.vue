@@ -4,7 +4,7 @@
       <div class="footer__section--info">
         <p>
           Dirección:
-          <br />Calle las esmeraldas 243 Urb. La Rinconada Trujillo - Trujillo
+          <br />Calle Las Esmeraldas 243 - La Rinconada Trujillo - Trujillo
         </p>
       </div>
       <div class="footer__section--info">

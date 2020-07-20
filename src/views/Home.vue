@@ -37,14 +37,14 @@
         </div>
         <router-link to="/servicios" class="button--white">Servicios</router-link>
       </div>
-      <div class="services__images">
+      <div class="services__images mobile__none">
         <img v-if="comerce" src="@/assets/img/comercializacion.png" alt />
         <img v-if="fabrication" src="@/assets/img/fabricacion.png" alt />
         <img v-if="repare" src="@/assets/img/reparacion.png" alt />
       </div>
     </div>
     <div class="contact">
-      <div class="contact__image">
+      <div class="contact__image mobile__none">
         <img src="@/assets/img/pataz.jpg" alt />
       </div>
       <div class="contact__info">
