@@ -20,7 +20,7 @@
           así satisfacer necesidades de dichas empresas.
         </p>
       </div>
-      <div class="about__history__about--image">
+      <div class="mobile__none about__history__about--image">
         <img src="@/assets/img/taller.jpg" alt />
       </div>
     </div>

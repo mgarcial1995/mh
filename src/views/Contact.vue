@@ -8,7 +8,7 @@
     </div>
     <p class="title">Visita nuestras instalaciones</p>
     <div class="contact__container">
-      <div class="contact__container__image">
+      <div class="mobile__none contact__container__image">
         <img src="@/assets/img/contact.jpg" alt />
       </div>
       <div class="contact__container__info">
@@ -47,7 +47,8 @@
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.0322864274276!2d-77.59552357410239!3d-7.786401628200215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ae17902516e7a7%3A0x8849e4772e00ea8d!2sPataz%2013501!5e0!3m2!1sen!2spe!4v1594789226077!5m2!1sen!2spe"
         width="100%"
-        height="400"
+        height="auto"
+        class="contact__map--map"
         frameborder="0"
         style="border:0;"
         allowfullscreen

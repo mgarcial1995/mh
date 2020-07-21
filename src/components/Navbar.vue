@@ -26,7 +26,7 @@
     </div>
 
     <div class="mobile__menu">
-      <i @click="showMobileNav = !showMobileNav, displayMenuMobile()" class="fas fa-bars"></i>
+      <i @click="showMobileNav = !showMobileNav" class="fas fa-bars"></i>
     </div>
   </div>
 </template>
@@ -38,18 +38,7 @@ export default {
       showMobileNav: false
     };
   },
-  methods: {
-    displayMenuMobile() {
-      let menu = document.getElementById("menu");
-      menu.style.height = "100vh";
-    },
-    closeMenuMobile() {
-      let menu = document.getElementById("menu");
-      screen.width > 768
-        ? (menu.style.height = "100px")
-        : (menu.style.height = "80px");
-    }
-  }
+  methods: {}
 };
 </script>
 
